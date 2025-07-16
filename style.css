@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111827;
+  color: #1f2937;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #111827;
+  padding: 1rem;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  color: white;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 70px;
+}
+
+h1 {
+  text-align: center;
+  vertical-align: baseline;
+  width: auto;
+  padding: 10px;
+  background: linear-gradient(to right, #7f318e, #d2509a, #e44f3800);
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: linear-gradient(to right, #7f318e, #D2509A, #E44E38);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
